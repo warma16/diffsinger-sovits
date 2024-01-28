@@ -1,14 +1,11 @@
 <div align="center">
-<img alt="LOGO" src="https://avatars.githubusercontent.com/u/127122328?s=400&u=5395a98a4f945a3a50cb0cc96c2747505d190dbc&v=4" width="300" height="300" />
   
-# SoftVC VITS Singing Voice Conversion
+# Diffsinger Enhanced SoftVC VITS Singing Voice Conversion
 
 [**English**](./README.md) | [**中文简体**](./README_zh_CN.md)
-
-[![Open In Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com/github/svc-develop-team/so-vits-svc/blob/4.1-Stable/sovits4_for_colab.ipynb)
-[![Licence](https://img.shields.io/badge/LICENSE-AGPL3.0-green.svg?style=for-the-badge)](https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/LICENSE)
-
 Apply Diffsinger Simply (Only F0 Extractor,A lot of features will enrich like energy and retake etc.)
+
+
 
 </div>
 
@@ -47,7 +44,7 @@ This project serves as a framework only and does not possess speech synthesis fu
 
 The singing voice conversion model uses SoftVC content encoder to extract speech features from the source audio. These feature vectors are directly fed into VITS without the need for conversion to a text-based intermediate representation. As a result, the pitch and intonations of the original audio are preserved. Meanwhile, the vocoder was replaced with [NSF HiFiGAN](https://github.com/openvpi/DiffSinger/tree/refactor/modules/nsf_hifigan) to solve the problem of sound interruption.
 
-### 🆕 4.1-Stable Version Update Content
+### 🆕 4 Update Content
 
 - Feature input is changed to the 12th Layer of [Content Vec](https://github.com/auspicious3000/contentvec) Transformer output, And compatible with 4.0 branches.
 - Update the shallow diffusion, you can use the shallow diffusion model to improve the sound quality.
@@ -55,6 +52,7 @@ The singing voice conversion model uses SoftVC content encoder to extract speech
 - Added static/dynamic sound fusion
 - Added loudness embedding
 - Added Functionality of feature retrieval from [RVC](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
+- Apply Diffsinger Simply (Only F0 Extractor,A lot of features will enrich like energy and retake etc.)
   
 ### 🆕 Questions about compatibility with the 4.0 model
 
