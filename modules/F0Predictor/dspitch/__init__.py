@@ -136,6 +136,7 @@ class SOME:
         phrases=[]
         world_datas=[]
         linguistic_params={"ph_dur":[]}
+        slices=[{"waveform":wf,"offset":0}]
         for segment in slices:
             segment_wf=segment["waveform"]
             res=infer(f"{self.some_path}",{
